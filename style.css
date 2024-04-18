@@ -1,0 +1,69 @@
+
+ /* Style for folders */
+.folder {
+  list-style: none;
+  padding-left: 20px; /* Add some left padding to indicate hierarchy */
+}
+
+.folder-name {
+  cursor: pointer;
+  user-select: none;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  position: relative; /* Required for positioning the icon */
+}
+
+.folder-name:before {
+  content: "\1F4C1"; /* Unicode character for folder icon */
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+/* Hide sub-folders by default */
+.folder ul {
+  display: none;
+}
+
+/* Style for files */
+.file {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.file:before {
+  content: "\1F4C4"; /* Unicode character for file icon */
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+/* Style for delete button */
+#deleteButton {
+  margin-top: 10px;
+  padding: 5px;
+  background-color: #ff4136;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+ #addFolderButton{
+  margin-top: 10px;
+  padding: 5px;
+  background-color: #36ff68;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+ }
+
+ #addFileButton{
+  margin-top: 10px;
+  padding: 5px;
+  background-color: #364aff;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+ }
